@@ -1,10 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/google/uuid"
+)
 
 func main() {
 	fmt.Println("Hello, World!")
-}
 
-type Post struct {
+	uuid := uuid.New()
+
+	fmt.Print(uuid)
 }
